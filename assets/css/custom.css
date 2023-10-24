@@ -28,6 +28,30 @@ html{
 
 }
 
+section{
+    padding:2rem  9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.btn{
+margin-top: 1rem;
+display: inline-block;
+font-size: 1.7rem;
+color: #fff;
+background: var(--black);
+border-radius: .5rem;
+cursor: pointer;
+padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background:var(--green);
+    letter-spacing: .1rem;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -122,6 +146,11 @@ header .icons #menu-bars{
     background: none;
 }
 
+.home .home-slider .slide .content h3{
+    font-size: 5rem;
+}
+
+
 #search-form #search-box::placeholder{
     color: #eee; 
 }
@@ -151,6 +180,9 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.swiper-pagination-buellet-active{
+    background: var(--green);
+}
 
 @media(max-width:991px){
 
@@ -159,6 +191,9 @@ header .icons #menu-bars{
     }
     header{
         padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
     }
 
 }
@@ -204,5 +239,42 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
+}
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}   
+
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}   
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color: var(--green);
+    font-size: 7 rem;
+}
+
+.home .home-slider .slide .content p{
+    color: var(--ligth-color);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height:1.5;
 }
 
